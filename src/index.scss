@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  background-color: #dac6a9;
+  text-align: center;
+}
+
+.app {
+  background-color: #ede2d4;
+  height: 100%;
+  min-height: 100vh;
+  margin-top: 0px;
+  padding-top: 0px;
+  text-align: center;
+  border-radius: 20px;
+  border-color: #7d5f36;
+  border-width: thin;
+  border-style: solid;
+  font-size: 4vw;
+  box-shadow: 0px 0px 20px 1rem #7d5f36, 0px 0px 30px 5rem #af854b, 0px 0px 30px 10rem #c6a77b;
+
+  @media (min-width: 400px) {
+    margin: 0 auto;
+    min-width: 400px;
+    width: 60vw;
+    font-size: 1em;
+    border-width: thick;
+  }
+}
+
+#logout, #form-submit, #login {
+  border-color: #7d4e36;
+  background-color: #c6a77b;
+  color: #36647d;
+  border-width: 0.15rem;
+  border-style: solid;
+  margin-top: 5px;
+  display: inline-block;
+  // font-weight: bold;
+  cursor: pointer;
+  @media (min-width: 400px) {
+    padding: 5px;
+  }
+}
+
+.heading {
+  color: #7d7136;
+  @media (min-width: 400px) {
+    padding-top: 5px;
+    font-size: 4em;
+  }
+}
+
+.add-task {
+  width: 96%;
+  margin-top: 0.3rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  display: inline-block;
+  color: #7d7136;
+  border-color: #7d4e36;
+  border-width: 0.15rem;
+  border-style: solid;
+//   padding: 1vw;
+  @media (min-width: 400px) {
+    padding: 1vw;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+  }
+}
+
+.form-input {
+  text-align: center;
+  display: inline-block;
+  width: 90%;
+  @media (min-width: 400px) {
+    margin: 5px;
+  }
+}
+
+::placeholder {
+  text-align: center;
+  opacity: 1;
+}
+
+.form-status {
+  margin: 3px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.form-checkbox {
+  margin-left: 5px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#form-submit {
+  text-align: center;
+  display: inline-block;
+  width: fit-content;
+  min-width: 10%;
+  padding: 5px;
+  cursor: pointer;
+  @media (max-width: 400px) {
+    padding: 1px;
+  }
+}
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  width: fit-content;
+  margin-top: 10px;
+  min-width: 10%;
+  padding: 5px;
+  cursor: pointer;
+  @media (max-width: 400px) {
+    padding: 1px;
+  }
+}
+
+.all-items {
+    width: 96%;
+  margin-top: 0.3rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  display: inline-block;
+  color: #7d7136;
+  border-color: #7d4e36;
+  border-width: 0.15rem;
+  border-style: solid;
+//   padding: 1vw;
+  @media (min-width: 400px) {
+    // padding: 1vw;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
+
+.no-tasks {
+  width: 96%;
+  margin-top: 0.3rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  display: inline-block;
+  color: #7d7136;
+  border-color: #7d4e36;
+  border-width: 0.15rem;
+  border-style: solid;
+  padding: 1vw;
+  @media (min-width: 400px) {
+    padding: 1vw;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
+
+.item {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  // height: 10%;
+  text-align: center;
+  display: inline-block;
+  color: #7d7136;
+  border-color: #7d4e36;
+  border-width: 0.15rem;
+  border-style: solid;
+  padding: 1vw;
+  @media (min-width: 400px) {
+    padding: 1vw;
+    margin-top: calc(100%-0.5em);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: calc(100%-0.5em);
+    width: 90%;
+  }
+}
+
+.task {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.edit-task-input {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-block;
+    text-align: center;
+    // width: fit-content;
+}
+
+.done {
+  background-color: #d4b893;
+}
+
+.delete, .edit, .current-item-status {
+    text-align: center;
+    width: 30%;
+    display: inline-block;
+}
+
+.checkbox {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+ul {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    display: inline-block;
+}
