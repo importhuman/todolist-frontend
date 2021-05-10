@@ -6,6 +6,7 @@
     "node": "14.x"
   },
   "dependencies": {
+    "@auth0/auth0-spa-js": "^1.15.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
