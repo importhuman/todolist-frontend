@@ -180,6 +180,13 @@ const LoggedIn = () => {
         {isAuthenticated && <span onClick={() => logout()} id="logout">Log out</span>}
         <h1 className="heading">To-do list</h1>
         <AddItem onAdd={addItem} />
+        <div className="note">
+            <p>
+              This application uses cookies to save sessions. Please ensure you have enabled cookies, or you will be logged out on refreshing or closing the tab. <br/>
+              If the application doesn't work for you, please try disabling any ad-blocking extensions that may be active.
+            </p>
+          </div>
+
         {items.length > 0 ? (
         <Items items={items} onDelete={deleteItem} onToggle={toggleStatus} editItem={editItem}/>
         ) : (
