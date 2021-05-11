@@ -12,7 +12,8 @@ const Home = () => {
               
               Please sign in to access your tasks.<br/><br/>
 
-              Note: This application uses cookies to save sessions. Please ensure you have enabled cookies, or you will be logged out on refreshing or closing the tab.
+              Note: This application uses cookies to save sessions. Please ensure you have enabled cookies, or you will be logged out on refreshing or closing the tab. <br/>
+              If the application doesn't work for you, please try disabling any ad-blocking extensions that may be active.
             </p>
             {!isAuthenticated && (
               <button id="login" onClick={() => loginWithRedirect({})}>Sign in</button>
