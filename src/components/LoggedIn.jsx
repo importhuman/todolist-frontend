@@ -17,6 +17,8 @@ const LoggedIn = () => {
     const getItems = async () => {
       try {
         const token = await getTokenSilently();
+
+        console.log("success 1");
         // console.log(token);
         // Send a GET request to the server and add the signed in user's
         // access token in the Authorization header
@@ -27,9 +29,16 @@ const LoggedIn = () => {
             Authorization: `Bearer ${token}`,
           },
         });
+
+        console.log("success 2");
+
         const responseData = await response.json();
+
+        console.log("success 3");
+
         setItems(responseData);
       } catch (error) {
+        console.log("caught error")
         console.error(error);
       }
     };
