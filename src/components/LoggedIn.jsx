@@ -20,7 +20,7 @@ const LoggedIn = () => {
         // console.log(token);
         // Send a GET request to the server and add the signed in user's
         // access token in the Authorization header
-        const response = await fetch("http://localhost:8000/list", {
+        const response = await fetch("https://infinite-ocean-99647.herokuapp.com/list", {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ const LoggedIn = () => {
   //     const token = await getTokenSilently();
   //       // Send a GET request to the server and add the signed in user's
   //       // access token in the Authorization header
-  //     const response = await fetch('http://localhost:8000/list', {
+  //     const response = await fetch('https://infinite-ocean-99647.herokuapp.com/list', {
   //       headers: {
   //         Authorization: `Bearer ${token}`,
   //       }
@@ -74,7 +74,7 @@ const LoggedIn = () => {
   const addItem = async (item) => {
     try {
       const token = await getTokenSilently();
-      const res = await fetch("http://localhost:8000/list/add", {
+      const res = await fetch("https://infinite-ocean-99647.herokuapp.com/list/add", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ const LoggedIn = () => {
   const deleteItem = async (id) => {
     try {
       const token = await getTokenSilently();
-      const res = await fetch(`http://localhost:8000/list/delete/${id}`, {
+      const res = await fetch(`https://infinite-ocean-99647.herokuapp.com/list/delete/${id}`, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${token}`,
@@ -122,7 +122,7 @@ const LoggedIn = () => {
   const toggleStatus = async (id) => {
     try {
       const token = await getTokenSilently();
-      const res = await fetch(`http://localhost:8000/list/done/${id}`, {
+      const res = await fetch(`https://infinite-ocean-99647.herokuapp.com/list/done/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -145,7 +145,7 @@ const LoggedIn = () => {
   const editItem = async (editItem) => {
     try {
       const token = await getTokenSilently();
-      const res = await fetch(`http://localhost:8000/list/edit/${editItem.id}`, {
+      const res = await fetch(`https://infinite-ocean-99647.herokuapp.com/list/edit/${editItem.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
