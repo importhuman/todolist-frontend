@@ -179,6 +179,7 @@ const LoggedIn = () => {
         <>
         {isAuthenticated && <span onClick={() => logout()} id="logout">Log out</span>}
         <h1 className="heading">To-do list</h1>
+        <p className="note"><a href="https://twitter.com/ImportHuman">(by Ujjwal Goyal)</a></p>
         <AddItem onAdd={addItem} />
         <div className="note">
             <p>
