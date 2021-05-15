@@ -67,7 +67,6 @@ body {
 
 .add-task {
   width: 96%;
-  margin-top: 0.3rem;
   margin-left: 2%;
   margin-right: 2%;
   text-align: center;
@@ -204,9 +203,13 @@ body {
 }
 
 .contact {
+  margin-bottom: 0.3rem;
   text-align: center;
   display: inline-block;
   color: #7d7136;
+  @media (min-width: 400px) {
+    margin-bottom: 20px;
+  }
 }
 
 .item {
