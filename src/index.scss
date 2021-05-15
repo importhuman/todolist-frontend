@@ -161,6 +161,27 @@ body {
 
 .no-tasks, .note {
   width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  display: inline-block;
+  color: #7d7136;
+  border-color: #7d4e36;
+  border-width: 0.15rem;
+  border-style: solid;
+  padding: 1vw;
+  @media (min-width: 400px) {
+    padding: 1vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
+
+.note {
+  width: 96%;
   margin-top: 0.3rem;
   margin-left: 2%;
   margin-right: 2%;
