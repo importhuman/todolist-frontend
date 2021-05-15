@@ -7,7 +7,7 @@ const Home = () => {
     // <Fragment>
         <div>
           <h1 className="heading">To-do list</h1>
-          <p className="note"><a href="https://twitter.com/ImportHuman">(by Ujjwal Goyal)</a></p>
+          <p className="contact"><a href="https://twitter.com/ImportHuman">(by Ujjwal Goyal)</a></p>
           <div className="no-tasks">
             <p>Add tasks, mark them as done, edit or delete them!<br/><br/>
               
