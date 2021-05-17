@@ -8,16 +8,11 @@ const LoggedIn = () => {
 
   const [items, setItems] = useState([])
 
-
-  // alternate method for GET ------------
-
-
   // fetch tasks, render the tasks fetched from backend to frontend
   useEffect(() => {
     const getItems = async () => {
       try {
         const token = await getTokenSilently();
-        // console.log(token);
         // Send a GET request to the server and add the signed in user's
         // access token in the Authorization header
         const response = await fetch("https://infinite-ocean-99647.herokuapp.com/list", {
@@ -36,38 +31,6 @@ const LoggedIn = () => {
 
     getItems();
   });
-
-  // -------------
-  
-  // // render the tasks fetched from backend to frontend
-  // useEffect(() => {
-  //   const getItems = async () => {
-  //     const data = await fetchItems()
-  //     setItems(data)
-  //   }
-
-  //   getItems()
-  // })
-  
-
-  // // // fetch tasks from backend
-  // const fetchItems = async () => {
-  //   try {
-  //     const token = await getTokenSilently();
-  //       // Send a GET request to the server and add the signed in user's
-  //       // access token in the Authorization header
-  //     const response = await fetch('https://infinite-ocean-99647.herokuapp.com/list', {
-  //       headers: {
-  //         Authorization: `Bearer ${token}`,
-  //       }
-  //     })
-  //     const data = await response.json()
-
-  //     return data
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // } 
 
   // add task
   // works with backend
