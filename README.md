@@ -2,11 +2,11 @@ This is the frontend repository for the to-do list web application [deployed her
 
 ## Stack
 
-- React: Frontend
-- Go: Backend
-- PostGreSQL: Database
-- Auth0: Authentication
-- Heroku: Deployment
+- Frontend: React
+- Backend: Go
+- Database: PostgreSQL
+- Authentication: Auth0
+- Deployment: Heroku
 
 ## How it works
 
